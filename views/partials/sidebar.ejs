@@ -22,7 +22,7 @@
           </ul> -->
         </li>
 
-       <li>
+       <!-- <li>
           <a href="javascript: void(0);" class="has-arrow waves-effect">
             <i class="bx bx-calendar"></i>
             <span key="t-dashboards"><%=translation.calendar %></span>
@@ -31,7 +31,7 @@
             <li><a href="/calendar" key="t-tui-calendar"><%=translation.t_tui_calendar %></a></li>
             <li><a href="/calendar-full" key="t-full-calendar"><%=translation.t_full_calendar %></a></li>
           </ul>
-        </li>
+        </li> -->
 
         <li>
           <a href="/chat" class="waves-effect">
@@ -39,12 +39,34 @@
             <span key="t-chat"><%=translation.t_chat %></span>
           </a>
         </li>
-
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+            <i class="bx bxs-user-detail"></i>
+            <span key="t-contacts"><%=translation.t_contacts %></span>
+          </a>
+          <ul class="sub-menu" aria-expanded="false">
+            <li><a href="/contacts-grid" key="t-user-grid"><%=translation.t_user_grid %></a></li>
+            <li><a href="/contacts-grid" key="t-user-grid">Contacts</a></li>
+            <li><a href="/contacts-list" key="t-user-list"><%=translation.t_user_list %></a></li>
+            <!-- <li><a href="/contacts-profile" key="t-profile"><%=translation.t_profile %></a></li> -->
+          </ul>
+        </li>
         <li>
           <a href="/apps-filemanager" class="waves-effect">
             <i class="bx bx-file"></i>
             <span key="t-file-manager"><%=translation.t_file_manager %></span>
           </a>
+        </li>
+        <li>
+          <a href="javascript: void(0);" class="has-arrow waves-effect">
+            <i class="bx bx-detail"></i>
+            <span key="t-blog"><%=translation.t_blog %></span>
+          </a>
+          <ul class="sub-menu" aria-expanded="false">
+            <li><a href="/blog-list" key="t-blog-list"><%=translation.t_blog_list %></a></li>
+            <li><a href="/blog-grid" key="t-blog-grid"><%=translation.t_blog_grid %></a></li>
+            <li><a href="/blog-details" key="t-blog-details"><%=translation.t_blog_details %></a></li>
+          </ul>
         </li>
 
         <li>
@@ -66,41 +88,17 @@
 
         <li>
           <a href="javascript: void(0);" class="has-arrow waves-effect">
-            <i class="bx bx-bitcoin"></i>
-            <span key="t-crypto"><%=translation.t_crypto %></span>
+            <i class="bx bx-briefcase-alt-2"></i>
+            <span key="t-projects"><%=translation.t_projects %></span>
           </a>
           <ul class="sub-menu" aria-expanded="false">
-            <li><a href="/crypto-wallet" key="t-wallet"><%=translation.t_wallet %></a></li>
-            <li><a href="/crypto-buy-sell" key="t-buy"><%=translation.t_buy %></a></li>
-            <li><a href="/crypto-exchange" key="t-exchange"><%=translation.t_exchange %></a></li>
-            <li><a href="/crypto-lending" key="t-lending"><%=translation.t_lending %></a></li>
-            <li><a href="/crypto-orders" key="t-orders"><%=translation.t_orders %></a></li>
-            <li><a href="/crypto-kyc-application" key="t-kyc"><%=translation.t_kyc %></a></li>
-            <li><a href="/crypto-ico-landing" key="t-ico"><%=translation.t_ico %></a></li>
+            <li><a href="/projects-grid" key="t-p-grid"><%=translation.t_p_grid %></a></li>
+            <li><a href="/projects-list" key="t-p-list"><%=translation.t_p_list %></a></li>
+            <li><a href="/projects-overview" key="t-p-overview"><%=translation.t_p_overview %></a></li>
+            <li><a href="/projects-create" key="t-create-new"><%=translation.t_create_new %></a></li>
           </ul>
         </li>
-
-        <li>
-          <a href="javascript: void(0);" class="has-arrow waves-effect">
-            <i class="bx bx-envelope"></i>
-            <span key="t-email"><%=translation.t_email %></span>
-          </a>
-          <ul class="sub-menu" aria-expanded="false">
-            <li><a href="/email-inbox" key="t-inbox"><%=translation.t_inbox %></a></li>
-            <li><a href="/email-read" key="t-read-email"><%=translation.t_read_email %></a></li>
-            <li>
-              <a href="javascript: void(0);">
-                <span key="t-email-templates"><%=translation.t_email_templates %></span>
-              </a>
-              <ul class="sub-menu" aria-expanded="true">
-                <li><a href="/email-template-basic" key="t-basic-action"><%=translation.t_basic_action %></a></li>
-                <li><a href="/email-template-alert" key="t-alert-email"><%=translation.t_alert_email %></a></li>
-                <li><a href="/email-template-billing" key="t-bill-email"><%=translation.t_bill_email %></a></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-
+       
         <li>
           <a href="javascript: void(0);" class="has-arrow waves-effect">
             <i class="bx bx-receipt"></i>
@@ -112,20 +110,9 @@
           </ul>
         </li>
 
-        <li>
-          <a href="javascript: void(0);" class="has-arrow waves-effect">
-            <i class="bx bx-briefcase-alt-2"></i>
-            <span key="t-projects"><%=translation.t_projects %></span>
-          </a>
-          <ul class="sub-menu" aria-expanded="false">
-            <li><a href="/projects-grid" key="t-p-grid"><%=translation.t_p_grid %></a></li>
-            <li><a href="/projects-list" key="t-p-list"><%=translation.t_p_list %></a></li>
-            <li><a href="/projects-overview" key="t-p-overview"><%=translation.t_p_overview %></a></li>
-            <li><a href="/projects-create" key="t-create-new"><%=translation.t_create_new %></a></li>
-          </ul>
-        </li>
+       
 
-        <li>
+        <!-- <li>
           <a href="javascript: void(0);" class="has-arrow waves-effect">
             <i class="bx bx-task"></i>
             <span key="t-tasks"><%=translation.t_tasks %></span>
@@ -135,33 +122,12 @@
             <li><a href="/tasks-kanban" key="t-kanban-board"><%=translation.t_kanban_board %></a></li>
             <li><a href="/tasks-create" key="t-create-task"><%=translation.t_create_task %></a></li>
           </ul>
-        </li>
+        </li> -->
 
-        <li>
-          <a href="javascript: void(0);" class="has-arrow waves-effect">
-            <i class="bx bxs-user-detail"></i>
-            <span key="t-contacts"><%=translation.t_contacts %></span>
-          </a>
-          <ul class="sub-menu" aria-expanded="false">
-            <li><a href="/contacts-grid" key="t-user-grid"><%=translation.t_user_grid %></a></li>
-            <li><a href="/contacts-list" key="t-user-list"><%=translation.t_user_list %></a></li>
-            <li><a href="/contacts-profile" key="t-profile"><%=translation.t_profile %></a></li>
-          </ul>
-        </li>
+       
 
-        <li>
-          <a href="javascript: void(0);" class="has-arrow waves-effect">
-            <i class="bx bx-detail"></i>
-            <span key="t-blog"><%=translation.t_blog %></span>
-          </a>
-          <ul class="sub-menu" aria-expanded="false">
-            <li><a href="/blog-list" key="t-blog-list"><%=translation.t_blog_list %></a></li>
-            <li><a href="/blog-grid" key="t-blog-grid"><%=translation.t_blog_grid %></a></li>
-            <li><a href="/blog-details" key="t-blog-details"><%=translation.t_blog_details %></a></li>
-          </ul>
-        </li>
-
-        <li>
+        
+        <!-- <li>
           <a href="javascript: void(0);" class="waves-effect has-arrow">
             <i class="bx bx-briefcase-alt"></i>
             <span key="t-jobs"><%=translation.t_jobs %></span>
@@ -180,7 +146,7 @@
               </ul>
             </li>
           </ul>
-        </li>
+        </li> -->
 
         <li class="menu-title" key="t-pages"><%=translation.t_pages %></li>
 
