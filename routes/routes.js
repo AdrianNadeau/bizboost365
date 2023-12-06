@@ -20,7 +20,7 @@ module.exports = function (route) {
         res.render('apps-filemanager');
     });
     //email
-    route.get('/auth-confirm-mail-2', function (req, res) {
+    route.get('/auth-confirm-mail-2', function (req, res) { 
         res.render('auth-confirm-mail-2', { layout: "layout/layout-without-nav", });
     });
     //email
