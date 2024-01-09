@@ -6,8 +6,19 @@ const AuthController = require("../controller/AuthController");
 
 // const route = express.Router();
 module.exports = function (route) {
+    route.use((req, res, next) => {
+        var uemail = req.session.useremail;
+        const allowUrls = ["/login", "/auth-login-2", "/auth-validate", "/register",  "/auth-register-2", "/signup", "/forgotpassword", "/sendforgotpasswordlink", "/resetpassword", "/error", "/changepassword"];
+        if (allowUrls.indexOf(req.path) !== -1) {
+            if (uemail != null && uemail != undefined) {
+                return res.redirect('/');
+            }
 
-   
+        } else if (!uemail) {
+            return res.redirect('/login');
+        }
+        next();
+    })
     route.get("/", function (req, res) {
         res.render("index");
     });

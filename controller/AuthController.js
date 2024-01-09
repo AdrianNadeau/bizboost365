@@ -4,9 +4,10 @@ const sendEmail = require("../utils/email")
 const login = (req, res) => {
     console.log(res.locals.userLogin);
     if (res.locals.userLogin) {
-        return res.redirect('dashboard');
+        console.log("send to dashboard")
+        return res.redirect('/');
     }
-    return res.render('login');
+    return res.render('auth-login-2');
 }
 
 // check login credential
@@ -33,6 +34,7 @@ const validate = async (req, res) => {
         usersession.userid = currentUser._id;
         usersession.username = currentUser.name;
         usersession.useremail = currentUser.email;
+        console.log("send to sass")
         return res.redirect('/');
     });
 

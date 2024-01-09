@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require("bcryptjs");
 const crypto = require("crypto");
+const { UUID } = require('bson');
 
 const UserSchema = new mongoose.Schema({
     name: {
@@ -15,6 +16,15 @@ const UserSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true
+    },
+    orgId: {
+        type: UUID,
+       
+    },
+    admin: {
+        type: Boolean,
+        required: true,
+        default: false
     },
     created_at: Date,
     passwordResetToken: String,
